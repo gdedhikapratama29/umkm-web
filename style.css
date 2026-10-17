@@ -76,6 +76,18 @@ nav {
   background-color: white;
 }
 
+.navbar .nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand .btn-menu {
+  color: var(--primary-color);
+  margin-right: 15px;
+  font-size: 21px;
+  display: none;
+}
+
 /* responsive mobile */
 
 @media (max-width: 567px) {
@@ -89,5 +101,32 @@ nav {
     height: 100%;
     width: 50%;
     top: 80px;
+    background-color: #333;
+    left: -100%;
+    transition: .5s;
+  }
+
+  .navbar .nav-menu a {
+    color: white;
+  }
+
+  .nav-menu li {
+    display: block;
+  }
+
+  .nav-menu li a::after {
+    transform-origin: left;
+  }
+
+  .nav-menu li a:hover::after {
+    transform: scaleX(0.25);
+  }
+
+  .nav-brand .btn-menu {
+    display: block;
+  }
+
+  .navbar .nav-menu.active {
+    left: 0;
   }
 }
