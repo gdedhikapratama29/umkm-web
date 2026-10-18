@@ -4,7 +4,7 @@
   --primary-color: #713600;
   --text-color: #c4a484;
   --btn-color: #713600;
-  --secondary: ##492000;
+  --secondary: #492000;
 }
 
 * {
@@ -17,6 +17,8 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
+
+/* style navbar */
 
 nav .navbar {
   display: flex;
@@ -88,6 +90,63 @@ nav {
   display: none;
 }
 
+/* style banner */
+
+main {
+  background-color: #efefef;
+}
+
+main .container {
+  max-width: 1150px;
+  display: flex;
+  margin: auto;
+  padding: 20px 0;
+  gap: 40px;
+  height: calc(100vh - 80px);
+}
+
+main img {
+  width: 60%;
+}
+
+main .tagline {
+  margin-top: 130px;
+  padding-right: 20px;
+}
+
+.tagline .tag {
+  color: var(--secondary);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.tagline h1 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.tagline .deskripsi {
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+
+.tagline .btn-order {
+  background-color: var(--btn-color);
+  color: white;
+  padding: 14px 17px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* style menu */
+
+
+
 /* responsive mobile */
 
 @media (max-width: 567px) {
@@ -103,7 +162,7 @@ nav {
     top: 80px;
     background-color: #333;
     left: -100%;
-    transition: .5s;
+    transition: 0.5s;
   }
 
   .navbar .nav-menu a {
@@ -128,5 +187,39 @@ nav {
 
   .navbar .nav-menu.active {
     left: 0;
+  }
+
+  /* style banner */
+  main .container {
+    display: block;
+    width: 100%;
+    padding: 0 10px 30px;
+    text-align: center;
+    height: 100%;
+  }
+
+  main .tagline {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tagline .tag {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tagline h1 {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .tagline .deskripsi {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  main img {
+    width: 70%;
   }
 }
