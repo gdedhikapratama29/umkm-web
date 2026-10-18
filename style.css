@@ -18,6 +18,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* style navbar */
 
 nav .navbar {
@@ -144,8 +148,100 @@ main .tagline {
 }
 
 /* style menu */
+#menu .container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 40px 0 60px;
+  text-align: center;
+}
 
+#menu .title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--primary-color);
+}
 
+#menu h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+#menu .galeri {
+  display: grid;
+  row-gap: 20px;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.galeri .card {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding-bottom: 10px;
+  transition: 0.3s ease;
+}
+
+.galeri .card:hover {
+  transform: scale(1.05);
+}
+
+.galeri .card img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+}
+
+.galeri .card .menu-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 5px 10px;
+}
+
+.menu-info .cart-menu {
+  background-color: var(--btn-color);
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.menu-info h3 {
+  text-align: left;
+  margin-right: 5px;
+  color: var(--text-color);
+}
+
+.menu-info h3 {
+  text-align: left;
+  margin-right: 5px;
+  color: var(--text-color);
+}
+
+.menu-info .span {
+  color: var(--text-color);
+  font-weight: bold;
+  text-align: left;
+  padding-top: 2px;
+  display: inline-block;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.menu-info i {
+  font-size: small;
+}
+
+.menu-info .menu-stars {
+  color: var(--primary-color);
+}
+
+.galeri .card .rating {
+  margin-top: 15px;
+  align-items: center;
+}
 
 /* responsive mobile */
 
@@ -221,5 +317,20 @@ main .tagline {
 
   main img {
     width: 70%;
+  }
+
+  /* style menu */
+  #menu .container {
+    width: 100%;
+    padding: 30px 10px;
+  }
+
+  #menu h2 {
+    font-size: 40px;
+  }
+
+  #menu .galeri {
+    grid-template-columns: 1fr;
+    padding: 0 30px;
   }
 }
