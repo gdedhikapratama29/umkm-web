@@ -270,6 +270,39 @@ main .tagline {
   margin-bottom: 50px;
 }
 
+#about .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.row .about-teks {
+  width: 55%;
+  margin-right: 50px;
+}
+
+.row .about-teks .p2 {
+  margin-bottom: 30px;
+}
+
+.row .about-teks .more {
+  background-color: var(--btn-color);
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+}
+
+.row .img-box {
+  width: 60%;
+  height: 70%;
+  background-color: white;
+  padding: 12px 10px;
+}
+
+.row .img-box img {
+  width: 100%;
+}
+
 
 
 /* responsive mobile */
