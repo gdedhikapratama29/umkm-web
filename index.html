@@ -38,7 +38,7 @@
           </a>
         </div>
       </div>
-          <!-- serach box -->
+      <!-- serach box -->
       <div class="kotak-cari" id="kotak-cari">
         <input type="text" id="teks-cari" placeholder="cari seusatu..." />
         <label for="teks-cari">
@@ -47,20 +47,40 @@
       </div>
 
       <!-- keranjang belanja -->
-       <div class="cart" id="cart">
+      <div class="cart" id="cart">
         <div class="cart-item">
-           <div class="item-brg">
-              <img src="./assets/menu.avif" alt="gambar menu">
-              <div class="item-detail">
-                  <h3>Cup Cake tiramisu</h3>
-                  <div class="item-harga">
-                    Rp 20.000
-                  </div>
-              </div>
+          <div class="item-brg">
+            <img src="./assets/menu.avif" alt="gambar menu" />
+            <div class="item-detail">
+              <h3>Cup Cake tiramisu</h3>
+              <div class="item-harga">Rp 20.000</div>
             </div>
-            <i class="fa-solid fa-trash" title="hapus barang"></i>
+          </div>
+          <i class="fa-solid fa-trash" title="hapus barang"></i>
         </div>
-       </div>
+
+        <div class="cart-item">
+          <div class="item-brg">
+            <img src="./assets/menu.avif" alt="gambar menu" />
+            <div class="item-detail">
+              <h3>Cup Cake tiramisu</h3>
+              <div class="item-harga">Rp 20.000</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash" title="hapus barang"></i>
+        </div>
+
+        <div class="cart-item">
+          <div class="item-brg">
+            <img src="./assets/menu.avif" alt="gambar menu" />
+            <div class="item-detail">
+              <h3>Cup Cake tiramisu</h3>
+              <div class="item-harga">Rp 20.000</div>
+            </div>
+          </div>
+          <i class="fa-solid fa-trash" title="hapus barang"></i>
+        </div>
+      </div>
     </nav>
 
     <main id="home">
@@ -85,7 +105,7 @@
 
         <div class="galeri">
           <div class="card">
-            <img src="./assets/menu.avif" alt="" />
+            <img src="./assets/menu.avif" alt="menu" class="detail-menu" />
             <div class="menu-info">
               <h3>cupckae rusksks</h3>
               <span>10k</span>
@@ -104,7 +124,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/menu.avif" alt="" />
+            <img src="./assets/menu.avif" alt="menu" class="detail-menu" />
             <div class="menu-info">
               <h3>cupckae rusksks</h3>
               <span>10k</span>
@@ -123,7 +143,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/menu.avif" alt="" />
+            <img src="./assets/menu.avif" alt="" class="detail-menu" />
             <div class="menu-info">
               <h3>cupckae rusksks</h3>
               <span>10k</span>
@@ -142,7 +162,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/menu.avif" alt="" />
+            <img src="./assets/menu.avif" alt="" class="detail-menu" />
             <div class="menu-info">
               <h3>cupckae rusksks</h3>
               <span>10k</span>
@@ -161,7 +181,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/menu.avif" alt="" />
+            <img src="./assets/menu.avif" alt="" class="detail-menu" />
             <div class="menu-info">
               <h3>cupckae rusksks</h3>
               <span>10k</span>
@@ -180,7 +200,7 @@
             </div>
           </div>
           <div class="card">
-            <img src="./assets/menu.avif" alt="" />
+            <img src="./assets/menu.avif" alt="" class="detail-menu" />
             <div class="menu-info">
               <h3>cupckae rusksks</h3>
               <span>10k</span>
@@ -285,6 +305,40 @@
     <section class="credit">
       <div class="container">created by <b>cupcake</b> | &copy; 2026.</div>
     </section>
+
+    <!-- modal box menu detail menu -->
+    <div class="modal-menu">
+      <div class="modal-box">
+        <div class="modal-header">
+          <h2>Detail menu</h2>
+          <a href="#" class="modal-close" title="close modal">
+            <i class="fa-solid fa-xmark" style="color: #713600"></i>
+          </a>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/menu.avif" alt="gambar menu" />
+          <div class="deskripsi">
+            <h3>Roti Coklat</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, saepe quam!
+              Inventore vero necessitatibus, accusamus excepturi suscipit est quibusdam error!
+            </p>
+            <div class="menu-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h4>Rp 10.000</h4>
+            <a href="#" class="cart-modal">
+              <i class="fa-solid fa-cart-shopping"></i>
+              add to cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
