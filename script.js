@@ -11,3 +11,19 @@ document.addEventListener('click', (e) => {
     navMenu.classList.remove('active');
   }
 })
+
+const btnCari = document.getElementById("btn-find");
+const kotakCari = document.getElementById("kotak-cari")
+const teksCari = document.getElementById("teks-cari")
+
+btnCari.onclick = function (e) {
+  e.preventDefault();
+  kotakCari.classList.toggle("active");
+  teksCari.focus();
+}
+
+document.addEventListener('click', function(e) {
+  if(!btnCari.contains(e.target) && !kotakCari.contains(e.target)) {
+    kotakCari.classList.remove('active');
+  }
+})
